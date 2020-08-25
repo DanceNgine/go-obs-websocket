@@ -104,6 +104,8 @@ type GetStreamingStatusResponse struct {
 	// Time elapsed since recording started (only present if currently recording).
 	// Required: No.
 	RecTimecode string `json:"rec-timecode"`
+	// add FPS
+	fps int `json:"fps"`
 	// Always false.
 	// Retrocompatibility with OBSRemote.
 	// Required: Yes.

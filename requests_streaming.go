@@ -105,7 +105,12 @@ type GetStreamingStatusResponse struct {
 	// Required: No.
 	RecTimecode string `json:"rec-timecode"`
 	// add FPS
-	fps int `json:"fps"`
+	FPS    float64 `json:"fps"`
+	KbitsPerSec int `json:"kbits-per-sec"`
+	Strain float64 `json:"strain"`
+	NumDroppedFrames int `json:"num-dropped-frames"`
+	NumTotalFrames int `json:"num-total-frames"`
+	TotalStreamTime int `json:"total-stream-time"`
 	// Always false.
 	// Retrocompatibility with OBSRemote.
 	// Required: Yes.
